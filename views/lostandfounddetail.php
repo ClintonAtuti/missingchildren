@@ -62,7 +62,7 @@ require_once('../config/security.php');
 <?php
 $identity=$_GET['id'];
 
-$sql="SELECT `ID`,`Full_Name`,`Image`,`Age`,`Height`,`Weight`,`Gender`,`SkinColor`,`HairColor`,`EyeColor`,`Description`,`Date_Reported`,`Reporter_ID` FROM lostandfoundWHERE ID='".$identity."' ";
+$sql="SELECT `ID`,`Full_Name`,`Image`,`Age`,`Height`,`Weight`,`Gender`,`SkinColor`,`HairColor`,`EyeColor`,`Description`,`Date_Reported`,`Reporter_ID` FROM lostandfound WHERE ID='".$identity."' ";
 $query_run=mysqli_query($conn,$sql);
 $num_row=mysqli_num_rows($query_run);
 if($num_row==1){

@@ -85,7 +85,7 @@ require_once('../config/security.php');
     <!--end of stylish search box body-->
 
 	<?php 
-		$sql="SELECT * FROM lostandfoundORDER BY Date_Reported DESC";
+		$sql="SELECT * FROM lostandfound ORDER BY Date_Reported DESC";
 		$query_run=mysqli_query($conn,$sql);
 		$counter=0;
 		$counter2=0;
